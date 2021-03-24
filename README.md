@@ -29,6 +29,9 @@ if you want audio transcripts to train on podcast text run playlistV2:
 if you wanna download the video as well just click add url again and click download.
 if you mess up the like just click reset.
 
+# video of output from my models:
+https://www.youtube.com/watch?v=5G_YIbovFsQ&ab_channel=Terpy
+
 # gpt-2 (OpenAI's readme keeping for beravity, I DO NOT OWN THIS NOR CLAIM ANY OF THERE WORK)
 
 Code and models from the paper ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf).
