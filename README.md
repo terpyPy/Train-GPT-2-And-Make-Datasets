@@ -1,6 +1,31 @@
-**Status:** Archive (code is provided as-is, no updates expected)
+# This is the merging of OpenAI's GPT-2 Repository and the Train your own repo from nsheaperd, i am in no way affiliated with eaither of them!!!!!!!!!!!!
+I made this repo to train gpt-2 on rap lyrics and lovecrafts books, 
+when i started there was no one repository with the tranng scripts up to date with the model downloads
+also the prev training repo used none exsitient 117m Models
 
-# gpt-2
+# What I added
+i added the scripts to help make some basic large text files,
+1. get_tweets.py: if you get twitter api access use this to download all of someones tweets
+2. playlistV2.py: has a UI that operates youtube-dl cmd arguments, lets you download the auto-genarated subtitles form any video
+
+# Data set tools uses
+get_tweets requires a twitter dev account for api accesse,
+modify these variables:
+	consumer_key = ""
+	consumer_secret = ""
+	access_key = ""
+	access_secret = ""
+this script writes a csv file with last 100 tweets to do more modifiy:
+	number_of_tweets = 100
+if you want audio transcripts to train on podcast text run playlistV2:
+1. fill in a url in the text field on top
+2. click the "auto gen subtitles button"
+3. click download playlist
+
+if you wanna download the video as well just click add url again and click download.
+if you mess up the like just click reset.
+
+# gpt-2 (OpenAI's readme keeping for beravity, I DO NOT OWN THIS NOR CLAIM ANY OF THERE WORK)
 
 Code and models from the paper ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf).
 
@@ -46,13 +71,3 @@ Please use the following bibtex entry:
   year={2019}
 }
 ```
-
-## Future work
-
-We may release code for evaluating the models on various benchmarks.
-
-We are still considering release of the larger models.
-
-## License
-
-[Modified MIT](./LICENSE)
