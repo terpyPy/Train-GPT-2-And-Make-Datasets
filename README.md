@@ -3,6 +3,10 @@ I made this repo to train gpt-2 on rap lyrics and lovecrafts books,
 when i started there was no one repository with the tranng scripts up to date with the model downloads
 also the prev training repo used none exsitient 117m Models
 
+# python enviorment 3.5.4 or lower is needed as tensorflow 1.12.0 fully deprecatied with tensorflow 2 release.
+use conda or your own env methoid, if you dont know how google it, time to learn.....
+or just use the docker files which will set this up in a VM with proper version.
+
 # What I added
 i added the scripts to help make some basic large text files,
 1. get_tweets.py: if you get twitter api access use this to download all of someones tweets
