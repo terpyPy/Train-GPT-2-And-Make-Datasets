@@ -1,4 +1,5 @@
 import subprocess
+import sys
 import PySimpleGUI as sg
 
 
@@ -54,23 +55,26 @@ class UI():
     # button functions
 
     def buttonFunction(self, button):
-        argList = ['youtube-dl', '-i', '-h', '--yes-playlist',
-                   self.values['url'], self.event, self.currentData,
-                   '--version', '--write-auto-sub', '--skip-download', '--sub-format best']
-        eventButtons = {'Confirm URL': [argList[0], argList[1], argList[3], argList[4]],
-                        'Clear URL': '',
-                        'download': argList[6],
-                        'help': [argList[0], argList[2]],
-                        'Cancel': argList[5],
-                        'Version checker': [argList[0], argList[7]],
-                        'auto Gen subtitles': [argList[0], argList[8], argList[4], argList[9]]}
+        try:
+            argList = ['youtube-dl', '-i', '-h', '--yes-playlist',
+                    self.values['url'], self.event, self.currentData,
+                    '--version', '--write-auto-sub', '--skip-download', '--sub-format best']
+            eventButtons = {'Confirm URL': [argList[0], argList[1], argList[3], argList[4]],
+                            'Clear URL': '',
+                            'download': argList[6],
+                            'help': [argList[0], argList[2]],
+                            'Cancel': argList[5],
+                            'Version checker': [argList[0], argList[7]],
+                            'auto Gen subtitles': [argList[0], argList[8], argList[4], argList[9]]}
 
-        if button == 'download':
-            self.currentData = eventButtons[button]
-            self.download()
-        else:
-            return eventButtons[button]
-
+            if button == 'download':
+                self.currentData = eventButtons[button]
+                self.download()
+            else:
+                if button:
+                    return eventButtons[button]
+        except TypeError:
+            sys.exit()
     # the download handler
     def download(self):
 
