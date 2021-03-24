@@ -19,6 +19,8 @@ modify these variables:
 	consumer_secret = ""
 	access_key = ""
 	access_secret = ""
+	
+
 this script writes a csv file with last 100 tweets to do more modifiy:
 	number_of_tweets = 100
 if you want audio transcripts to train on podcast text run playlistV2:
