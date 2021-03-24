@@ -14,4 +14,9 @@
 
   Ported download script to python.
 
+* **[terpyPy](https://github.com/terpyPy)**
+  merged out of date training repository with openAI's sample repo
+  made some dir paths static in argparser, updated default model args to 124 and 355,
+  updated download links for Download_models
+  
 **[Full code contributors list](https://github.com/openai/gpt-2/contributors).**

@@ -1,0 +1,15 @@
+get_tweets requires a twitter dev account for api accesse,
+modify these variables:
+	consumer_key = ""
+	consumer_secret = ""
+	access_key = ""
+	access_secret = ""
+this script writes a csv file with last 100 tweets to do more modifiy:
+	number_of_tweets = 100
+if you want audio transcripts to train on podcast text run playlistV2:
+1. fill in a url in the text field on top
+2. click the "auto gen subtitles button"
+3. click download playlist
+
+if you wanna download the video as well just click add url again and click download.
+if you mess up the like just click reset.

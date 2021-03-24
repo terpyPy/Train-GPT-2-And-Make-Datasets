@@ -11,7 +11,7 @@ import model, sample, encoder
 def sample_model(
     model_name='124M',
     seed=None,
-    nsamples=0,
+    nsamples=1,
     batch_size=1,
     length=None,
     temperature=1,

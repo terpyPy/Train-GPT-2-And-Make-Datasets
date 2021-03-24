@@ -85,4 +85,8 @@ python3 src/interactive_conditional_samples.py --top_k 40
 To check flag descriptions, use:
 ```
 python3 src/interactive_conditional_samples.py -- --help
+
+To Train your data set cd into training dir and:
 ```
+python3 encode.py "yourDataset".txt "yourDataSetName".npz --model_name 124M
+python3 train.py --dataset "yourDataSetName".npz --run_name "FoldNameForTraining" --model_name 124M
