@@ -11,6 +11,8 @@ or just use the docker files which will set this up in a VM with proper version.
 i added the scripts to help make some basic large text files,
 1. get_tweets.py: if you get twitter api access use this to download all of someones tweets
 2. playlistV2.py: has a UI that operates youtube-dl cmd arguments, lets you download the auto-genarated subtitles form any video
+3. updated the script used to download the the diffrent size models.
+4. 
 
 # Data set tools uses
 get_tweets requires a twitter dev account for api accesse,
